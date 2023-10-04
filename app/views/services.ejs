@@ -1,0 +1,43 @@
+<!--
+    File name: services.ejs
+    Student Name: Sabijon Reyes
+    ID: 301266968
+    Date: Oct 02, 2023
+-->
+
+<main class="container">
+    <%- include ('partials/header.ejs') %>
+    <%- include ('partials/main_nav.ejs') %>
+    <link rel="stylesheet" href="/stylesheet/style.css"/>
+    <link rel="stylesheet" href="/stylesheet/project.css"/>
+    <link rel="stylesheet" href="/stylesheet/pro.css"/>
+    <body>
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to <%= title %> page</h1>
+
+
+            <div class="picture-list">
+                <div class="picture-item">
+                    <img src="/img/web.webp" alt="Web development">
+                    <p>Web development</p>
+                </div>
+                <div class="picture-item">
+                    <img src="/img/database.png" alt="Server and Database">
+                    <p>Server and Database</p>
+                </div>
+                <div class="picture-item">
+                    <img src="/img/cyber.webp" alt="Cyber Security">
+                    <p>Cyber Security</p>
+                </div>
+                <div class="picture-item">
+                    <img src="/img/mobile.jpg" alt="Mobile development">
+                    <p>Mobile development</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</main>
+
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>

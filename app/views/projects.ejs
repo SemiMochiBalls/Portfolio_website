@@ -1,0 +1,52 @@
+<!--
+    File name: projects.ejs
+    Student Name: Sabijon Reyes
+    ID: 301266968
+    Date: Oct 02, 2023
+-->
+<main class=”container”>
+  <%- include ('partials/header.ejs') %>
+  <%- include ('partials/main_nav.ejs') %>
+  <link rel="stylesheet" href="/stylesheet/style.css"/>
+  <link rel="stylesheet" href="/stylesheet/project.css"/>
+  <link rel="stylesheet" href="/stylesheet/pro.css"/>
+  <body>
+        <div class=”jumbotron”>
+        <h1 class=”display-4”>Welcome to <%= title %> page</h1>
+        <div id="mainContainer">
+            <div id="projectsDiv" class="projects">
+              <div id="project1" class="projectsDiv">
+                <h2>Java Script Game Called "Bug Smasher"</h2>
+                <img src="/img/project1.png" alt="Bug Smasher Game">
+                <p>This was one my my favorite projects for the Java Script Course I took in Centennial College<br>
+                    You basically just click on the bug and you smash it for points<br></p>
+              </div>
+              <div id="project2" class="projectsDiv">
+                <h2>Portfolio Site</h2>
+                <img src="/img/project2.png" alt="project2">
+                <p>
+                    I use ExpressJS and NodeJS to develop the site and apply the EJS templating engine and Express routes.
+                    The site is a working portfolio website made with ExpressJS and NodeJS. It has various view templates,
+                    such as the Home Page and Contact Me page, that are displayed using the EJS templating engine.
+                    Each page of the site has an Express route that enables the correct navigation and view rendering.
+                </p>
+              </div>
+              <div id="project3" class="projectsDiv">
+                <h2>Bug smasher</h2>
+                <img src="/img/project3.png" alt="project3">
+                <p>
+                    My role in the Bug Smasher project is to assist and provide guidance in developing the application.<br>
+                    The Bug Smasher is a game or application aimed at simulating the experience of smashing bugs on a digital platform.<br>
+                    The outcome of the Bug Smasher project is a functional and interactive game/application that allows users to "smash" bugs using various actions or controls.<br>
+                    The application may include features such as bug spawning, time limits, scoring system, power-ups, and different levels of difficulty.<br>
+                    The specific implementation and features can vary depending on the project requirements.
+                </p>
+              </div>
+            </div>
+          </div>
+    </div>
+  </body>
+</main>
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>

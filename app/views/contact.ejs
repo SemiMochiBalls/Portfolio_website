@@ -1,0 +1,45 @@
+<!--
+    File name: contacts.ejs
+    Student Name: Sabijon Reyes
+    ID: 301266968
+    Date: Oct 02, 2023
+-->
+
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+<main class=”container”>
+    <link rel="stylesheet" href="/stylesheet/style.css"/>
+    <div class=”jumbotron”>
+        <h1 class=”display-4”>Welcome to <%= title %> page</h1>
+        <strong>Talk to me</strong>
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <a href="mailto:sachi.reyes@icloud.com">Email Me</a></p>
+            <p><strong>Phone:</strong> +1 437 422 0552</p>
+        </div>
+
+        <form action="http://localhost:3000/">
+            <td style="width: 200px; height: 26px;"> 
+            <lable for ="fname">FIRST NAME: </lable>
+            <input type="text" id="fname" name="fname" placeholder="John" required>
+            <td style="width: 200px; height: 26px;"> 
+            <lable for ="lname">LAST NAME: </lable>
+            <input type="text" id="lname" name="lname" placeholder="Doe" required>
+            <td style="width: 200px; height: 26px;"> 
+            <lable for ="cnum">CONTACT NUMBER: </lable>
+            <input type="text" id="cnum" name="cnum" placeholder="(123)456-789" required>
+            <td style="width: 200px; height: 26px;"> 
+            <lable for ="email">EMAIL: </lable>
+            <input type="text" id="EMAIL" name="EMAIL" placeholder="JohnDoe@gmail.com" required>
+            <br>
+            <lable for ="message">LEAVE YOUR MESSAGE HERE: </lable>
+            <textarea id="review" rows="5" cols="50"></textarea><br>
+            <input name="submit" type="submit" value="SEND MESSAGE"> 
+        </form>
+        <a href="/">| Back to Home | </a>
+    </div>
+</main>
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>

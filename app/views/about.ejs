@@ -1,0 +1,27 @@
+<!--
+    File name: about.ejs
+    Student Name: Sabijon Reyes
+    ID: 301266968
+    Date: Oct 02, 2023
+-->
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+<main class=”container”>
+    <head>
+        <link rel="stylesheet" href="/stylesheet/style.css"/>
+    </head>
+    <div class=”jumbotron”>
+        <h1 class=”display-4”>Welcome to <%= title %> page</h1>
+        <img src="/img/myself.jpg" alt="myself" class="myself">
+        <strong>| Learn more about me |</strong>
+        <a href="/img/resume.pdf">Check out my resume!</a>
+        <td>Hi I am Sachi Sabijon Reyes! I am from the Philippines<br>
+            I want to someday work in the tech field, specifically in interactive tech! <br>
+            During my free time i just like playing video games and I used to hike alot
+         </td>
+    </div>
+</main>
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>
